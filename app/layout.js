@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} ${ovo.variable} antialiased`}
+        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden`}
       >
         {children}
       </body>

@@ -15,6 +15,9 @@ module.exports = {
       fontFamily:{
         Outfit:["Outfit","sans-serif"],
         Ovo:["Ovo","serif"]
+      },
+      gridTemplateColumns:{
+        'auto':'repeat(auto-fit,minmax(200px,1fr))'
       }
    },
   },

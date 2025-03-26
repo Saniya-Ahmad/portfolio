@@ -100,10 +100,11 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'SearchWise', description: 'Search Engine implementing Google programmable search APIs using Nextjs and Tailwind css... ', link: 'https://github.com/Saniya-Ahmad/SearchWise' },
+    { icon: assets.web_icon, title: 'Image gallery', description: 'Image gallery implementing unsplash API using Reactjs...', link: 'https://github.com/Saniya-Ahmad/imageGallery' },
+    { icon: assets.web_icon, title:  'To-do List', description: 'To-do list website for managing daily tasks using HTML, CSS, JavaScript...', link: 'https://github.com/Saniya-Ahmad/todolist' },
+    { icon: assets.web_icon, title:  'Mess-Mate', description: 'MessMate is an webiste that help in managing and making convinient the mess related tasks Contribution: frontend and UI...', link: 'https://github.com/Saniya-Ahmad/Mess-Mate' }
+    
 ]
 
 export const infoList = [

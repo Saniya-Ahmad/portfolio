@@ -37,7 +37,7 @@ function Contact() {
         If you have any Questions, comments, or feedback please use the form below: 
       </p>
     <form  onSubmit={onSubmit} className='max-w-2xl mx-auto'>
-        <div className='grid gid-cols-auto gap-6 mt-10 mb-8 '> 
+        <div className='grid grid-cols-auto gap-6 mt-10 mb-8 '> 
             <input type="text" placeholder='Enter your name' required 
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white ' name='name'/>
             <input type="email" placeholder='Enter your email' required 

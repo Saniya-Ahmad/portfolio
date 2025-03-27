@@ -23,10 +23,14 @@ function Mywork() {
                 <br></br>
                 <a href={link}>GitHub link <FaArrowRight /></a>
                 
+                
             </div>
         ))}
 
-      </div>
+      </div >
+      <a target="_blank" href="https://github.com/Saniya-Ahmad"className='w-max flex items-center justify-center gap-2 text-gray-700 border[0.5px]
+      border rounded-full y-5 py-2 px-8 mx-auto my-20 hover:bg-lightHover duration-500'>See More<Image src={assets.right_arrow_bold} alt='Right arrow'
+      className='w-4'/></a>
     </div>
   )
 }

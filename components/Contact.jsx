@@ -2,6 +2,7 @@ import React from 'react'
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import { useState } from 'react';
+import{motion} from 'motion/react'
 function Contact() {
     const [result, setResult] = useState("");
 
@@ -29,14 +30,33 @@ function Contact() {
   };
 
   return (
-    <div id="contact"className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")]
+    <motion.div
+    initial={{ opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:1, delay:0.3}}
+    id="contact"className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")]
     bg-no-repeat bg-center bg-[length:90%_auto]'>
-      <h4 className='text-center mb-2 tetx-lg font-Ovo'>Let's Connect</h4>
-      <h2 className='text-center text-5xl font-Ovo'> Get in touch </h2>
-      <p className='text-center max-w-2xl mx-auto mt-5 font-Ovo'>
+      <motion.h4 
+      initial={{y:-20, opacity:0}}
+      whileInView={{y:0,opacity:1}}
+      transition={{duration:0.5, delay:0.3}} className='text-center mb-2 tetx-lg font-Ovo'>Let's Connect</motion.h4>
+      <motion.h2
+      initial={{y:-20, opacity:0}}
+      whileInView={{y:0,opacity:1}}
+      transition={{duration:0.5, delay:0.4}}
+      className='text-center text-5xl font-Ovo'> Get in touch </motion.h2>
+      <motion.p
+       initial={{ opacity:0}}
+       whileInView={{opacity:1}}
+       transition={{duration:0.5, delay:0.5}}
+      className='text-center max-w-2xl mx-auto mt-5 font-Ovo'>
         If you have any Questions, comments, or feedback please use the form below: 
-      </p>
-    <form  onSubmit={onSubmit} className='max-w-2xl mx-auto'>
+      </motion.p>
+    <motion.form
+     initial={{ opacity:0}}
+     whileInView={{opacity:1}}
+     transition={{duration:0.5, delay:0.5}}
+    onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-auto gap-6 mt-10 mb-8 '> 
             <input type="text" placeholder='Enter your name' required 
             className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white ' name='name'/>
@@ -49,8 +69,8 @@ function Contact() {
         bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500' >Submit now
         <Image src={assets.right_arrow_white} alt="" className='w-4'/></button>
         <p className='mt-4'>{result}</p>
-    </form>
-    </div>
+    </motion.form>
+    </motion.div>
   )
 }
 

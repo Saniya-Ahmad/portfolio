@@ -1,15 +1,33 @@
 import { assets } from '@/assets/assets'
 import React from 'react'
 import Image from 'next/image'
+import {motion} from'motion/react'
 function About() {
   return (
-    <div id ="about" className='w-full px-[12%] py-10 scroll-mt-20'>
-      <h4 className='text-center mb-2 tetx-lg font-Ovo'>Introduction</h4>
-      <h2 className='text-center text-5xl font-Ovo'>About me </h2>
-      <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-        <div className='w-64 sm:w:80 rounded-3xl max-w-none'>
+    <motion.div
+    initial={{ opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:1, delay:0.3}}
+    id ="about" className='w-full px-[12%] py-10 scroll-mt-20'>
+      <motion.h4 
+       initial={{y:-20, opacity:0}}
+       whileInView={{y:0,opacity:1}}
+       transition={{duration:0.5, delay:0.3}}
+      className='text-center mb-2 tetx-lg font-Ovo'>Introduction</motion.h4>
+      <motion.h2
+       initial={{y:-20, opacity:0}}
+       whileInView={{y:0,opacity:1}}
+       transition={{duration:0.5, delay:0.5}} className='text-center text-5xl font-Ovo'>About me </motion.h2>
+      <motion.div
+       initial={{ opacity:0}}
+       whileInView={{opacity:1}}
+       transition={{duration:0.8}} className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+        <motion.div
+         initial={{scale:0.9, opacity:0}}
+         whileInView={{scale:1,opacity:1}}
+         transition={{duration:0.6}} className='w-64 sm:w:80 rounded-3xl max-w-none'>
           <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
-        </div>
+        </motion.div>
         <div className='flex-1'>
           <p>I am Second year undergraduate at National Institute of Technology, Patna.
             I am hardworking person who is always keen to learn new things.I am a frontend
@@ -28,8 +46,8 @@ function About() {
           
 
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
     
   )
 }

@@ -11,10 +11,10 @@ const Navbar = () => {
   const sideMenuRef =useRef();
 
   const openMenu =()=>{
-    sideMenuRef.current.style.transform = 'translateX(-16rem)'
+    sideMenuRef.current.style.transform = 'translateX(0)'
   }
   const closeMenu =()=>{
-    sideMenuRef.current.style.transform = 'translateX(16rem)'
+    sideMenuRef.current.style.transform = 'translateX(100%)'
   }
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{

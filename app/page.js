@@ -7,8 +7,10 @@ import About from "@/components/About";
 import Mywork from "@/components/Mywork";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { useEffect,useState } from "react";
 
 export default function Home() {
+  
   return (
   <>
  <Navbar/>

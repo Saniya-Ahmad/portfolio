@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 
 import "./globals.css";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import About from "@/components/About";
 import Mywork from "@/components/Mywork";
 import Contact from "@/components/Contact";

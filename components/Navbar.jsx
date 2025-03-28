@@ -72,8 +72,9 @@ const Navbar = () => {
           </button>
           <li><a className="font-Ovo"href='#top' onClick={closeMenu}>Home</a></li>
             <li><a className="font-Ovo"href='#about' onClick={closeMenu}>About me</a></li>
-            <li><a className="font-Ovo"href='#services' onClick={closeMenu}>Services</a></li>
+            
             <li><a className="font-Ovo"href='#work' onClick={closeMenu}>My Work</a></li>
+            <li><a className="font-Ovo"href='#experience' onClick={closeMenu}>Experience</a></li>
             <li><a className="font-Ovo"href='#contact' onClick={closeMenu}>Contact me </a></li>
          
         </ul>
